@@ -1,0 +1,63 @@
+.education{
+    height: 50vh;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+}
+
+.edu-cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4%;
+}
+
+.edu-card{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    width: 30%;
+    border: 2px solid rgb(161, 106, 4);
+    padding: 2%;
+    color: rgba(9, 32, 2, 0.856);
+}
+
+.edu-card .degree{
+    font-size: 35px;
+}
+
+
+
+@media only screen and (max-width: 1000px){
+    .edu-cards{
+        margin-top: 2%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .education{
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .edu-cards{
+        flex-direction: column;
+    }
+
+    .edu-card{
+        width: 100%;
+        margin: 2% 0;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .edu-card{
+        width: 98%;
+    }
+    
+    .edu-cards{
+        justify-content: center;
+        align-items: center;
+    }
+}
+

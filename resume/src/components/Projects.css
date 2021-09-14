@@ -1,0 +1,39 @@
+.project{
+    width: 40%;
+    border-radius: 20px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.116);
+    align-items: center;
+}
+
+.project img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 15px rgb(63, 62, 62);
+}
+
+.project-title{
+    margin: 3% 0;
+}
+
+.project-title a{
+    text-decoration: none;
+}
+
+.project-description{
+    box-shadow: 1px 1px 15px rgb(63, 62, 62);
+    background-color: black;
+    color: white;
+    padding: 10%;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 1000px){
+    .project{
+        width: 90%;
+        margin-top: 8%;
+    }
+}

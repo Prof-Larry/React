@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JSX Exercise</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/react-dom-factories@1.0.2/index.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script type="text/babel">
+        function Randomizer() {
+            return Math.floor(Math.random() * 255 + 1);
+        }
+        function fontsizer() {
+            return `${Math.random() * 2 + 1}em`;
+        }
+        class RandomBox extends React.Component {
+            render() {
+                let R = Randomizer();
+                let G = Randomizer();
+                let B = Randomizer();
+                let F = fontsizer();
+                return (
+                    <div style={{
+                        backgroundColor: `rgb(${R}, ${G}, ${B}`,
+                        width: "15%",
+                        textAlign: "center",
+                        padding: "30px 20px",
+                        fontSize: `${F}`
+                    }}>
+                        Make a box here!
+                    </div>
+                )
+            }
+        }
+
+        ReactDOM.render(<RandomBox />, document.getElementById('app'));
+    </script>
+</body>
+
+</html>
